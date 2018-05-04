@@ -1,0 +1,41 @@
+.container{
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: solid 4px black;
+  background-color: #E6E6E6;
+}
+.h1{
+  width:100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.h2{
+  font-weight: bolder;
+
+}
+.h3{font-weight: bolder;
+}
+.h4{
+  font-weight: bolder;
+}
+#submitButton{
+  background-color: bfbfbf;
+  width: 100px;
+  height: 30px;
+
+}
+#sidebar{
+  margin:0;
+  background-color: #8fbc8e;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 100%;
+
+}
