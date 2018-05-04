@@ -9,7 +9,6 @@
   <script src="js/jquery.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/javascript.js" charset="utf-8"></script>
-
   </script>
 </head>
 
@@ -27,45 +26,41 @@
           <h5>week 3 independent project</h5>
         </div>
       </div>
-    <div class="col-md-8">
-      <form id="signup">
-        <label for="email">Enter your email:</label>
-        <input type="text" id="email">
-        <button type="submit">submit</button>
-        <h3>Let's play!</h3>
-        <h4>rules:</h4>
-        <p>ping pong will count up to your number from 1 with the following exceptions:</p>
-        <ol>
-          <li>Numbers divisible by 3 will become "ping"</li>
-          <li>Numbers divisible by 5 will become "pong"</li>
-          <li>Numbers divisible by 3 and 5 will become "pingpong"</li>
-        </ol>
+      <div class="col-md-8">
+        <form id="signup">
+          <label for="email">Enter your email:</label>
+          <input type="text" id="email">
+          <button type="submit">Go</button>
+          <h3>Let's play!</h3>
+          <h4>rules:</h4>
+          <p>ping pong will count up to your number from 1 with the following exceptions:</p>
+          <ol>
+            <li>Numbers divisible by 3 will become "ping"</li>
+            <li>Numbers divisible by 5 will become "pong"</li>
+            <li>Numbers divisible by 3 and 5 will become "pingpong"</li>
+          </ol>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+
+          <ul id="ulist">
+          </ul>
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            <p><strong>Enter your number Here:</strong></p>
-            <ul id="ulist">
-
-            </ul>
+        <div class="col-md-3">
+          <div class="form-horizontal">
+            <div class="form-group" id="inputform">
+              <p><strong>Enter your number Here:</strong></p>
+              <input type="text" id="userInput" class="form-control">
+            </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-horizontal">
-              <div class="form-group" id="inputform">
-                <input type="text" id="userInput" class="form-control">
-
-              </div>
-
-            </div>
-            <div class="col-md-6">
-              <button id="submitButton">submit</button>
-
-            </div>
-      </form>
+          <div class="col-md-6">
+            <button id="submitButton">PingPong!</button>
+          </div>
+          </form>
+        </div>
       </div>
-
-      </div>
+    </div>
   </div>
-</div>
 </body>
 
 </html>
