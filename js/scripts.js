@@ -1,13 +1,13 @@
 //Business logic
+//var userInput;
 var pingpong = function(userInput) {
-  console.log(userInput);
-  for (i = 0; i < userInput.length; i++) {
-    if (userInput % 3 === 0) {
-      $("#result").append("<li>ping</li>");
-    } else if (userInput % 5 === 0) {
-      $("#result").append("<li>pong</li>");
-    } else if (userInput % 15 === 0) {
-      $("#result").append("<li>pingpong</li>");
+  for (i = 1; i <= userInput; i++) {
+    if (i % 3 === 0) {
+      $("#result").append("ping <br/>");
+    } else if (i % 5 === 0) {
+      $("#result").append("pong <br/>");
+    } else if (i % 15 === 0) {
+      $("#result").append("pingpong <br/>");
     } else($("#result").append(i.toString() + "<br/>"));
   };
 };
@@ -15,12 +15,11 @@ var pingpong = function(userInput) {
 
 //user interface logic
 $(document).ready(function() {
-  $("pingpong#submit").submit(function(event) {
+  $("#Pingpong").submit(function(event) {
+      $("#result").text('');
+     userInput = parseInt($("#userInput").val());
+     var userInput;
+     pingpong(userInput);
     event.preventDefault();
-
-    var userInput = parseInt($("#userInput").val());
-    console.log(userInput);
-    var result = pingpong(userInput);
-    $("#result").text(result);
   });
 });
